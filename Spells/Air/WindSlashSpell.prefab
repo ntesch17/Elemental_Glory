@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8850879624260094077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6222081483927272903}
+  - component: {fileID: 1886600483621628412}
+  - component: {fileID: 8587514382679476978}
+  - component: {fileID: 8431551171876483915}
+  - component: {fileID: 5283655760405639081}
+  m_Layer: 12
+  m_Name: WindSlashSpell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6222081483927272903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850879624260094077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31.09105, y: 2.4084811, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1133756156975001729}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1886600483621628412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850879624260094077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &8587514382679476978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850879624260094077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591d725aadc50d441b09e2dbc2e0c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: 1
+  basic: 0
+  ultimate: 0
+  mixedSpell: 0
+  applyGravity: 0
+  unlocked: 1
+  offCooldown: 0
+  siphen: 0
+  thruPlatform: 0
+  atLocation: 0
+  nontargetable: 0
+  hasModifier: 000001
+  baseImpactDmg:
+  - 0
+  - 0
+  - 0
+  impactDmg:
+  - 0
+  - 0
+  - 0
+  damage:
+  - 10
+  - 10
+  - 15
+  baseDamage:
+  - 10
+  - 10
+  - 15
+  duration:
+  - 0.5
+  - 0.5
+  - 0.5
+  cooldown:
+  - 12
+  - 12
+  - 12
+  manaCost:
+  - 15
+  - 20
+  - 25
+  mod:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 6158772064607136128, guid: 4f2de43bcf776514993cfbc05df5df82, type: 3}
+  caster: {fileID: 0}
+  spellObject: {fileID: 0}
+  element: Air
+  element2: 
+  spellIcon: {fileID: 0}
+  speed: 30
+  level: 0
+  casterID: 0
+  spellID: 24
+  spellName: Wind Slash
+--- !u!50 &8431551171876483915
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850879624260094077}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &5283655760405639081
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850879624260094077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.045820236, y: 1.0687292}
+      - {x: 0.3089733, y: 0.6182976}
+      - {x: 0.4167614, y: 0.27923083}
+      - {x: 0.43169594, y: 0.015731812}
+      - {x: 0.405056, y: -0.30815458}
+      - {x: 0.23790169, y: -0.65220165}
+      - {x: 0.09474945, y: -0.89054847}
+      - {x: 0.11400032, y: -0.94555056}
+      - {x: 0.19832039, y: -0.8777461}
+      - {x: 0.3410282, y: -0.7048271}
+      - {x: 0.4762287, y: -0.42802382}
+      - {x: 0.5564232, y: -0.17304087}
+      - {x: 0.57523537, y: 0.06714535}
+      - {x: 0.5555458, y: 0.30609798}
+      - {x: 0.4241352, y: 0.66411734}
+--- !u!1001 &8804456663223311878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6222081483927272903}
+    m_Modifications:
+    - target: {fileID: 7045681981870960088, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_Name
+      value: Wind_Slash_Spell
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.9335804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35836804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -138
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030622959261264358, guid: de80b260ed3aabf49827b289a48e4afd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de80b260ed3aabf49827b289a48e4afd, type: 3}
+--- !u!4 &1133756156975001729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8472501906199490183, guid: de80b260ed3aabf49827b289a48e4afd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8804456663223311878}
+  m_PrefabAsset: {fileID: 0}

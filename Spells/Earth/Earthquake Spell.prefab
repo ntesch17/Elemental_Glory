@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6728681515575411691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6728681515575411695}
+  - component: {fileID: 6728681515575411688}
+  - component: {fileID: 6728681515575411689}
+  - component: {fileID: 6728681515575411690}
+  - component: {fileID: 6848657914687974241}
+  - component: {fileID: 230858428325943619}
+  m_Layer: 8
+  m_Name: Earthquake Spell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6728681515575411695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.76, y: -9.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &6728681515575411688
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 6
+--- !u!114 &6728681515575411689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78da984381558124d899ebc849db1e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: 0
+  basic: 0
+  ultimate: 0
+  mixedSpell: 0
+  applyGravity: 0
+  unlocked: 0
+  offCooldown: 0
+  siphen: 0
+  thruPlatform: 0
+  atLocation: 0
+  nontargetable: 1
+  hasModifier: 010101
+  baseImpactDmg:
+  - 0
+  - 0
+  - 0
+  impactDmg:
+  - 0
+  - 0
+  - 0
+  damage:
+  - 0
+  - 0
+  - 0
+  baseDamage:
+  - 0
+  - 0
+  - 0
+  duration:
+  - 7
+  - 9
+  - 9
+  cooldown:
+  - 25
+  - 25
+  - 25
+  manaCost:
+  - 25
+  - 25
+  - 25
+  mod:
+  - {fileID: 508303674688806753, guid: 941a58404d8f4be4db0539adc62208b6, type: 3}
+  - {fileID: 508303674688806753, guid: 941a58404d8f4be4db0539adc62208b6, type: 3}
+  - {fileID: 508303674688806753, guid: 941a58404d8f4be4db0539adc62208b6, type: 3}
+  caster: {fileID: 0}
+  spellObject: {fileID: 0}
+  element: Earth
+  element2: 
+  spellIcon: {fileID: 0}
+  speed: 0
+  level: 0
+  casterID: 0
+  spellID: 0
+  spellName: Earthquake
+  platforms: []
+  secondMod:
+  - {fileID: 885938296022723343, guid: f84794f5f8f431f4b9dd46eee244a3fb, type: 3}
+  - {fileID: 885938296022723343, guid: f84794f5f8f431f4b9dd46eee244a3fb, type: 3}
+  - {fileID: 885938296022723343, guid: f84794f5f8f431f4b9dd46eee244a3fb, type: 3}
+--- !u!114 &6728681515575411690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c48fc30a5f182e4483a58adc32c142d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followedObject: {fileID: 0}
+  x: 0
+  y: 0
+--- !u!114 &6848657914687974241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &230858428325943619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728681515575411691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.045454547
+  m_SyncRotationAxis: 3
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1

@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7045681981870960088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8472501906199490183}
+  - component: {fileID: 8509698185829089631}
+  - component: {fileID: 4584360253959264574}
+  - component: {fileID: 1812895593775981420}
+  - component: {fileID: 2797264981960641270}
+  - component: {fileID: 6030622959261264358}
+  m_Layer: 12
+  m_Name: Wind_Slash_Spell
+  m_TagString: Spell
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8472501906199490183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.284025, y: -11.209711, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8509698185829089631
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 277958909
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: efe2b14f11a68164a85d8597ae1d94d0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.92, y: 1.92}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &4584360253959264574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591d725aadc50d441b09e2dbc2e0c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: 1
+  basic: 0
+  ultimate: 0
+  mixedSpell: 0
+  applyGravity: 0
+  unlocked: 1
+  offCooldown: 0
+  siphen: 0
+  thruPlatform: 0
+  atLocation: 0
+  nontargetable: 0
+  hasModifier: 000001
+  baseImpactDmg:
+  - 0
+  - 0
+  - 0
+  impactDmg:
+  - 0
+  - 0
+  - 0
+  damage:
+  - 10
+  - 10
+  - 15
+  baseDamage:
+  - 10
+  - 10
+  - 15
+  duration:
+  - 0.5
+  - 0.5
+  - 0.5
+  cooldown:
+  - 12
+  - 12
+  - 12
+  manaCost:
+  - 15
+  - 20
+  - 25
+  mod:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 6158772064607136128, guid: 4f2de43bcf776514993cfbc05df5df82, type: 3}
+  caster: {fileID: 0}
+  spellObject: {fileID: 0}
+  element: Air
+  element2: 
+  spellIcon: {fileID: 0}
+  speed: 30
+  level: 0
+  casterID: 0
+  spellID: 0
+  spellName: Wind Slash
+--- !u!114 &1812895593775981420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!50 &2797264981960641270
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &6030622959261264358
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045681981870960088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.92}
+    newSize: {x: 1.92, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.17999999, y: -0.76}
+      - {x: 0.22999999, y: -0.7}
+      - {x: 0.28, y: -0.62}
+      - {x: 0.34, y: -0.56}
+      - {x: 0.39999998, y: -0.42999998}
+      - {x: 0.42999998, y: -0.32999998}
+      - {x: 0.45999998, y: -0.25}
+      - {x: 0.45999998, y: -0.14999999}
+      - {x: 0.48, y: 0.049999997}
+      - {x: 0.48999998, y: 0.13}
+      - {x: 0.48, y: 0.25}
+      - {x: 0.45999998, y: 0.31}
+      - {x: 0.44, y: 0.44}
+      - {x: 0.35999998, y: 0.64}
+      - {x: 0.28, y: 0.72999996}
+      - {x: 0.26, y: 0.79999995}
+      - {x: 0.19, y: 0.89}
+      - {x: 0.14999999, y: 0.95}
+      - {x: 0.12, y: 0.96}
+      - {x: 0.01, y: 0.96}
+      - {x: 0.07, y: 0.85999995}
+      - {x: 0.099999994, y: 0.78}
+      - {x: 0.19, y: 0.66999996}
+      - {x: 0.19, y: 0.64}
+      - {x: 0.22, y: 0.57}
+      - {x: 0.22999999, y: 0.47}
+      - {x: 0.26999998, y: 0.41}
+      - {x: 0.28, y: 0.29}
+      - {x: 0.29999998, y: 0.06}
+      - {x: 0.28, y: -0.099999994}
+      - {x: 0.26999998, y: -0.22}
+      - {x: 0.25, y: -0.26999998}
+      - {x: 0.19999999, y: -0.37}
+      - {x: 0.19999999, y: -0.42999998}
+      - {x: 0.17, y: -0.47}
+      - {x: 0.089999996, y: -0.61}
+      - {x: 0.04, y: -0.69}
+      - {x: -0.06, y: -0.81}
+      - {x: -0.089999996, y: -0.89}
+      - {x: -0.099999994, y: -0.94}
+      - {x: -0.099999994, y: -0.96}
+      - {x: -0.03, y: -0.96}
+      - {x: -0.01, y: -0.95}
+      - {x: 0.08, y: -0.87}
+      - {x: 0.08, y: -0.84}
